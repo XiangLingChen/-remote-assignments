@@ -26,9 +26,13 @@ p {
 /* ---- Navigation ---- */
 
 
+.header_logo {
+    height: 48px;
+    margin-right: 0.5em;
+  }
 
 .nav {
-    border-bottom: 1px solid #EAEAEB;
+    
     text-align: right;
     height:70px;
     line-height: 70px;
@@ -89,13 +93,52 @@ label {
 	padding-right: 1em;
 }
 
-.main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	background: #fff;
-    margin-bottom: 2em;
-    border-style: dotted;
+
+
+/* ================================= 
+  Header & Title
+==================================== */
+
+.header1 {
+    width: 100%;
+    margin-top: .5em;
 }
+
+.mainTitle p{
+    font-size: 1.5em;
+    font-weight: 460;
+    text-align: center;
+    margin-top: 1em;
+    color: #2d2c72;
+    
+}
+
+/* ================================= 
+  Col
+==================================== */
+
+.new {
+    margin-top: 60px;
+}
+.colPic {
+    width:80%;
+}
+
+
+
+@media screen and (min-width:800px) {
+    .col {
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+		width: 50%;
+		padding-left: 1em;
+        padding-right: 1em;
+        
+	}
+}
+
+
 
 
 /* ================================= 
@@ -108,7 +151,8 @@ label {
 		min-height: calc(100vh - 89px);
 	}
 
-	.container {
+    .container,
+    .container2 {
 		width: 90%;
 		max-width: 1200px;
 		margin: 0 auto;
