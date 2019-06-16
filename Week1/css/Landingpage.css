@@ -8,14 +8,11 @@
 
 body {
 	font-family: 'Helvetica Nue', sans-serif;
-	line-height: 1.6;
+	line-height: 2;
 	color: #242424;
 }
 
-p {
-	font-size: .95em;
-	margin-bottom: 1.5em;
-}
+
 
 
 
@@ -146,12 +143,12 @@ label {
 		display: inline-block;
         margin-right: -0.5em;
         margin-top: 1.5em;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
 		vertical-align: top;
 		width: 50%;
 		padding-left: 1em;
         padding-right: 1em;
-        
+        font-size: .95em;
 	}
 }
 
@@ -160,7 +157,7 @@ label {
 
         margin-top: 3em;
         margin-bottom: 4em;
-	
+        font-size: .95em;
         
 	}
 }
@@ -226,7 +223,7 @@ label {
 
  .first,
  .second {
-     margin-top: 1em;
+     margin-top: .5em;
      margin-bottom: 2em;
  }
 
