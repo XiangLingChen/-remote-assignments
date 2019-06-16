@@ -61,7 +61,7 @@ img.header_logo {
 }
 
 label {
-    margin: 0 40px 0 0;
+    margin: 0;
 	font-size: 1.5em;
     line-height: 70px;
     display: none;
