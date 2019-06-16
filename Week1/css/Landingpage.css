@@ -1,0 +1,125 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Nue', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height:70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #2d2c72;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 0.95em;
+}
+
+label {
+    margin: 0 40px 0 0;
+	font-size: 2em;
+    line-height: 70px;
+    display: none;
+    color: #2d2c72;
+    width: 26px;
+    float:right;
+}
+#toggle {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+.menu a {
+    display: block;
+    border-bottom: 0.5px solid #2d2c72;
+    margin: 0;
+}
+    #toggle:checked + .menu {
+    display: block;    
+    }
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background: #fff;
+    margin-bottom: 2em;
+    border-style: dotted;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 800px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+
+
+
+
+}
+
+
+
+
