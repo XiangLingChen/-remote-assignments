@@ -159,11 +159,45 @@ label {
 	}
 
 
+/* ================================= 
+  CTA button
+==================================== */
 
-
-
+.CTA {
+    text-align: center;
+    margin-top: 3em;
 }
+    .back {
+        font-family: Helvetica;
+        font-size: 1em;
+        text-decoration: none;
+        color: #2d2c72;
+        padding: 15px 28px;
+        background-color: white;
+        border: 0.7px solid #2d2c72;
+        
+    }
+    .h_line { 
+        width:100%; 
+        height: 0.8px; 
+        margin-top: 3em;
+        background: #2d2c72;
+      }
 
+/* ================================= 
+  Footer
+==================================== */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    color: #2d2c72;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Helvetica;
+    margin-top:  70px;
+ }
 
 
 
