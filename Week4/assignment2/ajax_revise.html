@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ajax test</title>
+    </head>
+    <body>
+        <h1>AJAX Test</h1>
+        <script>
+            function ajax(src, callback){
+                fetch(src).then(function(response){
+                    return response.json();
+                }).then(function(data){
+                    callback(data);
+                });
+            }
+            function render(data){
+                var currentDiv = document.getElementById("div1"); 
+
+                Array.prototype.forEach.call(data, element=>{
+                    var newDiv = document.createElement("div");
+                    var listContent = element.name + " - " + element.price + " - " + element.description;
+                    var newContent = document.createTextNode(listContent); 
+                    newDiv.appendChild(newContent); //add the text node to the newly created div. 
+                    document.body.insertBefore(newDiv, currentDiv);
+                });
+            }
+            ajax("https://cwpeng.github.io/live-records-samples/data/products.json", function(response){
+                render(response);
+            }); // you should get product information in JSON format and render data in the page    
+        </script>
+        <div id="div1">The text above has been created dynamically.</div>
+    </body>
+</html>
+
+
+
+
