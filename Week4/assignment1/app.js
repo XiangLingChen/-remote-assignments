@@ -1,7 +1,7 @@
 function delayedResult(n1, n2, delayTime, callback){ 
+    
+    setTimeout(callback(result), delayTime);   
     const result = n1 + n2;
-   
-    setTimeout(callback(result), delayTime);    
 }; 
 
 delayedResult( 4, 5, 3000, function(result){ console.log(result); } ); 
